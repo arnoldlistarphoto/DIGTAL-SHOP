@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAFA SHOP — Roblox 遊戲道具交易平台</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ══════════════ HEADER ══════════════ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">🛍️</span>
+      <span class="logo-text">FAFA SHOP</span>
+    </a>
+    <nav class="main-nav">
+      <a href="#products">所有產品</a>
+      <a href="#about">關於我們</a>
+      <a href="#faq">常見問題</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#" class="btn-link">登入</a>
+      <a href="#" class="btn-primary">立即註冊</a>
+    </div>
+    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#products">所有產品</a>
+    <a href="#about">關於我們</a>
+    <a href="#faq">常見問題</a>
+    <a href="#">登入</a>
+    <a href="#" class="btn-primary">立即註冊</a>
+  </div>
+</header>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>Roblox 遊戲道具<br /><span class="highlight">即買即用</span></h1>
+      <p>Steal a Brainrot、Grow a Garden 2、Adopt Me、Blox Fruits — 全網最平，現貨即發</p>
+      <a href="#products" class="btn-hero">立即選購</a>
+    </div>
+    <div class="hero-badges">
+      <div class="badge-card"><span class="badge-num">3000+</span><span class="badge-label">五星好評</span></div>
+      <div class="badge-card"><span class="badge-num">99%</span><span class="badge-label">好評率</span></div>
+      <div class="badge-card"><span class="badge-num">即發</span><span class="badge-label">現貨秒發</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ NOTICE BAR ══════════════ -->
+<div class="notice-bar">
+  <div class="container">
+    📢 全部商品現貨即發，交收安全有保障｜客服時間 10:00 – 24:00
+  </div>
+</div>
+
+<!-- ══════════════ PRODUCTS ══════════════ -->
+<section class="products-section" id="products">
+  <div class="container">
+    <h2 class="section-title">熱門產品</h2>
+
+    <!-- Category Filter -->
+    <div class="category-filter">
+      <button class="filter-btn active" data-cat="all">全部</button>
+      <button class="filter-btn" data-cat="steal-brainrot">Steal a Brainrot</button>
+      <button class="filter-btn" data-cat="grow-garden">Grow a Garden 2</button>
+      <button class="filter-btn" data-cat="adopt-me">Adopt Me</button>
+      <button class="filter-btn" data-cat="blox-fruits">Blox Fruits</button>
+      <button class="filter-btn" data-cat="ttd">Toilet Tower Defense</button>
+      <button class="filter-btn" data-cat="mm2">MM2</button>
+      <button class="filter-btn" data-cat="rivals">Rivals</button>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid" id="productGrid">
+
+      <!-- Steal a Brainrot -->
+      <div class="product-card" data-cat="steal-brainrot">
+        <div class="product-img" style="background:#0d4f4f;">
+          <span class="product-emoji">🧠</span>
+        </div>
+        <div class="product-badges">
+          <span class="tag hot">熱賣</span>
+        </div>
+        <div class="product-body">
+          <h3>Steal a Brainrot<br />【現貨即發】</h3>
+          <p class="product-rating">⭐ 3000+ 五星好評　♡ 8</p>
+          <div class="product-price">
+            <span class="price-now">HK$20</span>
+          </div>
+          <button class="btn-buy">立即購買</button>
+        </div>
+      </div>
+
+      <!-- Grow A Garden 2 Pet -->
+      <div class="product-card" data-cat="grow-garden">
+        <div class="product-img" style="background:#2d5016;">
+          <span class="product-emoji">🐾</span>
+        </div>
+        <div class="product-badges">
+          <span class="tag hot">熱賣</span>
+        </div>
+        <div class="product-body">
+          <h3>Grow A Garden 2<br />Pet &amp; 寵物</h3>
+          <p class="product-rating">⭐ 3000+ 五星好評　♡ 47</p>
+          <div class="product-price">
+            <span class="price-now">HK$1</span>
+          </div>
+          <button class="btn-buy">立即購買</button>
+        </div>
+      </div>
+
+      <!-- Adopt Me Cows -->
+      <div class="product-card" data-cat="adopt-me">
+        <div class="product-img" style="background:#d4a574;">
+          <span class="product-emoji">🐄</span>
+        </div>
+        <div class="product-body">
+          <h3>Adopt Me Cows<br />【收養我吧】</h3>
+          <p class="product-rating">⭐ 3000+ 五星好評</p>
+          <div class="product-price">
+            <span class="price-now">HK$20</span>
+          </div>
+          <button class="btn-buy">立即購買</button>
+        </div>
+      </div>
+
+      <!-- Blox Fruits -->
+      <div class="product-card" data-cat="blox-fruits">
+        <div class="product-img" style="background:#2d1b4e;">
+          <span class="product-emoji">🍎</span>
+        </div>
+        <div class="product-body">
+          <h3>Blox Fruits<br />Fruits &amp; Skins</h3>
+          <p class="product-rating">⭐ 3000+ 五星好評</p>
+          <div class="product-price">
+            <span class="price-now">HK$5</span>
+          </div>
+          <button class="btn-buy">立即購買</button>
+        </div>
+      </div>
+
+      <!-- Free Mushroom Seed -->
+      <div class="product-card" data-cat="grow-garden">
+        <div class="product-img" style="background:#8b5a2b;">
+          <span class="product-emoji">🍄</span>
+        </div>
+        <div class="product-badges">
+          <span class="tag new">免費</span>
+        </div>
+        <div class="product-body">
+          <h3>Free Mushroom Seed<br />Grow A Garden 2</h3>
+          <p class="product-rating">♡ 1</p>
+          <div class="product-price">
+            <span class="price-now">免費</span>
+          </div>
+          <button class="btn-buy">立即領取</button>
+        </div>
+      </div>
+
+      <!-- Toilet Tower Defense Gems -->
+      <div class="product-card" data-cat="ttd">
+        <div class="product-img" style="background:#0a0a2e;">
+          <span class="product-emoji">💎</span>
+        </div>
+        <div class="product-body">
+          <h3>Toilet Tower Defense<br />Gems 寶石</h3>
+          <p class="product-rating">⭐ 3000+ 五星好評　♡ 8</p>
+          <div class="product-price">
+            <span class="price-now">HK$10</span>
+          </div>
+          <button class="btn-buy">立即購買</button>
+        </div>
+      </div>
+
+      <!-- Toilet Tower Defense Shiny Units -->
+      <div class="product-card" data-cat="ttd">
+        <div class="product-img" style="background:#4a1a6e;">
+          <span class="product-emoji">✨</span>
+        </div>
+        <div class="product-badges">
+          <span class="tag hot">熱賣</span>
+        </div>
+        <div class="product-body">
+          <h3>Toilet Tower Defense<br />Shiny Units</h3>
+          <p class="product-rating">⭐ 3000+ 五星好評　♡ 2</p>
+          <div class="product-price">
+            <span class="price-now">HK$50</span>
+          </div>
+          <button class="btn-buy">立即購買</button>
+        </div>
+      </div>
+
+      <!-- MM2 -->
+      <div class="product-card" data-cat="mm2">
+        <div class="product-img" style="background:#1a0a0a;">
+          <span class="product-emoji">🔪</span>
+        </div>
+        <div class="product-badges">
+          <span class="tag hot">熱賣</span>
+        </div>
+        <div class="product-body">
+          <h3>MM2<br />Everything Cheapest!!!</h3>
+          <p class="product-rating">⭐ 3100+ 好評　♡ 31</p>
+          <div class="product-price">
+            <span class="price-now">HK$5</span>
+          </div>
+          <button class="btn-buy">立即購買</button>
+        </div>
+      </div>
+
+      <!-- Grow A Garden 2 Sheckles -->
+      <div class="product-card" data-cat="grow-garden">
+        <div class="product-img" style="background:#c9820c;">
+          <span class="product-emoji">🪙</span>
+        </div>
+        <div class="product-body">
+          <h3>Grow A Garden 2<br />Sheckles 金幣</h3>
+          <p class="product-rating">⭐ 3000+ 五星好評　♡ 1</p>
+          <div class="product-price">
+            <span class="price-now">HK$15</span>
+          </div>
+          <button class="btn-buy">立即購買</button>
+        </div>
+      </div>
+
+      <!-- Rivals -->
+      <div class="product-card" data-cat="rivals">
+        <div class="product-img" style="background:#2a2a2a;">
+          <span class="product-emoji">⚔️</span>
+        </div>
+        <div class="product-badges">
+          <span class="tag new">新品</span>
+        </div>
+        <div class="product-body">
+          <h3>Rivals<br />競爭者【現貨即發】</h3>
+          <p class="product-rating">⭐ 3000+ 五星好評　♡ 32</p>
+          <div class="product-price">
+            <span class="price-now">HK$5</span>
+          </div>
+          <button class="btn-buy">立即購買</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FEATURES ══════════════ -->
+<section class="features-section">
+  <div class="container">
+    <h2 class="section-title">為什麼選擇我們？</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">⚡</span>
+        <h3>現貨即發</h3>
+        <p>落單後立即發貨，無需等待人工審核</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">💰</span>
+        <h3>全網最平</h3>
+        <p>直接同搬磚工作室合作，價錢全網最平</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🔒</span>
+        <h3>交收安全</h3>
+        <p>3000+ 五星好評，交收安全可靠，貨不對辦包補</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">💬</span>
+        <h3>真人客服</h3>
+        <p>每日 10:00–24:00 真人即時客服，快速解決問題</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FAQ ══════════════ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <h2 class="section-title">常見問題</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">點樣落單同交收？ <span>+</span></button>
+        <div class="faq-answer">落單付款後，透過 WhatsApp / Discord 約定遊戲內交收時間，現貨商品一般即日完成。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">用代練 / 交易道具會唔會封號？ <span>+</span></button>
+        <div class="faq-answer">我們所有交收方式均為遊戲內正常交易途徑，3000+ 五星好評，安全可靠，從未有客戶因交收而被封號。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">幾耐先收到道具？ <span>+</span></button>
+        <div class="faq-answer">大部分商品為現貨，落單後即時可約交收；少量代搬商品需 1-3 小時。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">支援邊啲遊戲？ <span>+</span></button>
+        <div class="faq-answer">目前支援 Steal a Brainrot、Grow a Garden 2、Adopt Me、Blox Fruits、Toilet Tower Defense、MM2、Rivals。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">支援哪些付款方式？ <span>+</span></button>
+        <div class="faq-answer">支援 PayMe、FPS（轉數快）、Visa / Mastercard 信用卡及 PayPal。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="logo">
+        <span class="logo-icon">🛍️</span>
+        <span class="logo-text">FAFA SHOP</span>
+      </a>
+      <p>香港最平 Roblox 遊戲道具交易平台，現貨即發，安全可靠</p>
+    </div>
+    <div class="footer-links">
+      <h4>快速連結</h4>
+      <a href="#products">所有產品</a>
+      <a href="#faq">常見問題</a>
+      <a href="#about">關於我們</a>
+    </div>
+    <div class="footer-links">
+      <h4>支援</h4>
+      <a href="#">聯絡客服</a>
+      <a href="#">退款政策</a>
+      <a href="#">使用條款</a>
+      <a href="#">私隱政策</a>
+    </div>
+    <div class="footer-contact">
+      <h4>聯絡我們</h4>
+      <p>📱 WhatsApp: +852 9XXX XXXX</p>
+      <p>📧 support@example.com</p>
+      <p>⏰ 客服時間: 10:00 – 24:00</p>
+      <div class="social-links">
+        <a href="#" title="WhatsApp">💬</a>
+        <a href="#" title="Instagram">📸</a>
+        <a href="#" title="Telegram">✈️</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2025 FAFA SHOP. All rights reserved. 本站產品均為正版授權轉售。</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════ CHAT BUTTON ══════════════ -->
+<button class="chat-btn" id="chatBtn" title="聯絡客服">
+  💬
+  <span class="chat-label">客服</span>
+</button>
+
+<!-- ══════════════ CART TOAST ══════════════ -->
+<div class="toast" id="toast">已加入購物車！立即查看 →</div>
+
+<script src="app.js"></script>
+</body>
+</html>
